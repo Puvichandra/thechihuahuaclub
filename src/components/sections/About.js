@@ -163,10 +163,10 @@ const About = () => {
         Welcome To The Chihuahua Club.
         </Title>
         <SubText>
-          {/* The wallet address holding the most number of NFTs amd the wallet address holding the rarest Mythical Chihuahua wins a brand new Honda Civic worth 30,000$.  */}
+        The Chihuahua Club is a collection of 10,000 unique digital NFTs. The Chihuahuas are stored as ERC-721 tokens on the BSC blockchain.
         </SubText>
         <SubTextLight>
-        The Chihuahua Club is a collection of 10,000 unique digital NFTs. The Chihuahuas are stored as ERC-721 tokens on the BSC blockchain.
+          Mint your NFT and get a chance to win rewards worth more than 60,000$. 
         </SubTextLight>
         <ButtonContainer>
         <ThemeProvider theme={dark}>

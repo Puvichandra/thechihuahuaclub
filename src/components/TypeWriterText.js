@@ -28,12 +28,13 @@ const Title = styled.h2`
   }
 
   @media (max-width: 70em) {
-    // font-size: ${(props) => props.theme.fontxl};
+    font-size: ${(props) => props.theme.fontlg};
 
   }
   @media (max-width: 48em) { 
     align-self: center;
     text-align:center;
+    font-size: ${(props) => props.theme.fontsm};
   }
   @media (max-width: 40em){
     width: 90%;
@@ -42,7 +43,8 @@ const Title = styled.h2`
   
 `;
 const SubTitle = styled.h3`
-  font-size: ${(props) => props.theme.fontlg};
+  font-size: ${(props) => props.theme.fontmd};
+  // font-size: 1vw;
   text-transform: capitalize;
   color: ${props => `rgba(${props.theme.bodyRgba}, 0.6)`};
   font-weight:600;
@@ -52,7 +54,7 @@ const SubTitle = styled.h3`
   align-self: center;
 
   @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontmd};
+    font-size: ${(props) => props.theme.fontxs};
 
   }
 
@@ -64,7 +66,7 @@ const SubTitle = styled.h3`
 `
 
 const ButtonContainer = styled.div`
- width: 80%;
+//  width: 80%;
   // align-self: flex-start;
   display:flex;
 

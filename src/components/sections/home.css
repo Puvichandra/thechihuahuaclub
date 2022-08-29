@@ -3,6 +3,7 @@
     height: 100vh;
     left: 0;
     /* top: 0; */
+    bottom: 0;
     width: 100vw;
     z-index: -2;
     object-fit: cover;
@@ -23,7 +24,7 @@
     bottom: 0;
     left: 5%;
     /* width: 30vw; */
-    width: 40rem;
+    width: 35rem;
 }
 .civic{
     width: 100%;
@@ -64,13 +65,14 @@
 
 
 
+
 @media (max-width: 1680px) {
     .bg{
         object-fit: cover;
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 820px) {
    .car__container{
     width: 80vw;
     left: 0;

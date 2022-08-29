@@ -113,7 +113,8 @@ a{
 @media (max-width: 48em) {
 flex-direction: column;
 width: 100%;
-font-size: ${props => props.theme.fontmd};
+text-align: center;
+font-size: ${props => props.theme.fontxs};
 
 span{
   margin-bottom: 1rem;

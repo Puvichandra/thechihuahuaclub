@@ -28,20 +28,22 @@ margin: 0 auto;
 
 .menu__btn{
   background: white;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.5rem;
   border: 3px solid black;
   position: absolute;
   left:0;
-  // border-bottom-left-radius: 2rem;
-  // border-bottom-right-radius: 2rem;
-  bottom:-2.5rem;
+  bottom:-2rem;
   z-index:100;
+  display:none;
 }
 .mobile{
   display: none;
 }
 
 @media (max-width: 64em) {
+  .menu__btn{
+    display:block;
+  }
 .desktop{
   display: none;
 }

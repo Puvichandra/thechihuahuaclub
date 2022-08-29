@@ -1,6 +1,7 @@
 .mint__now{
     font-size: 25px;
     padding: 15px;
+  
 }
 .eightbit-btn {
     background: #92CD41;
@@ -50,4 +51,12 @@
   }
   .eightbit-btn--reset:active {
     box-shadow: inset 4px 4px 0px 0px #8C2022;
+  }
+
+
+  @media screen and (max-width: 1160px){
+    .mint__now{
+      font-size: 15px;
+    }
+
   }

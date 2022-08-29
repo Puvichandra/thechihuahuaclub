@@ -12,7 +12,8 @@ import Wheel from '../../assets/wheel1.png'
 import Text from '../../assets/fin.png'
 import './home.css'
 import VID from '../../assets/vid.mp4'
-
+import { useState, useEffect } from "react"
+import Clock from '../../components/Clock'
 
 const CoverVideo = lazy(() => import('../CoverVideo'));
 const TypeWriterText = lazy(() => import('../TypeWriterText'));
@@ -23,6 +24,10 @@ width: 100vw;
 height: 100vh;
 // height: max-content;
 position: relative;
+
+@media (max-width: 64em) {
+  height: 100%;
+}
 `
 
 const Container = styled.div`
@@ -52,14 +57,15 @@ const Box = styled.div`
 width: 60%;
 height: 100%;
 display: flex;
-padding-top: 5rem;
+padding-top: 3rem;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-gap: 1rem;
+gap: 0.8rem;
 
 @media (max-width: 48em) {
   padding-top:0rem;
+  gap: 0.5rem;
 }
 
 `
@@ -123,7 +129,58 @@ font-size:${props => props.theme.fontlg};
 
 `
 
+
 const Home = () => {
+
+
+// -----------TIMER---------
+
+
+const [timerDays, setTimerDays] = useState();
+  const [timerHours, setTimerHours] = useState();
+  const [timerMinutes, setTimerMinutes] = useState();
+  const [timerSeconds, setTimerSeconds] = useState();
+
+  let interval;
+
+  const startTimer = () => {
+    const countDownDate = new Date("Sep 19,2022 ").getTime();
+
+    interval = setInterval(() => {
+      const now = new Date().getTime();
+
+      const distance = countDownDate - now;
+
+      const days = Math.floor(distance / (24 * 60 * 60 * 1000));
+      const hours = Math.floor(
+        (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
+      const seconds = Math.floor((distance % (60 * 1000)) / 1000);
+
+      if (distance < 0) {
+        // Stop Timer
+
+        clearInterval(interval.current);
+      } else {
+        // Update Timer
+        setTimerDays(days);
+        setTimerHours(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+      }
+    });
+  };
+
+  useEffect(() => {
+    startTimer();
+  });
+
+
+
+// TIMER END----------
+
+
   return (
     <Section id="home">
       {/* <img src={Img} className='bg'></img> */}
@@ -143,6 +200,14 @@ const Home = () => {
         <img src={Text} className='text__design'></img>
         <Suspense fallback={<Loading />}>
           <TypeWriterText /></Suspense>
+          <div className='home__timer'>
+          <Clock
+        timerDays={timerDays}
+        timerHours={timerHours}
+        timerMinutes={timerMinutes}
+        timerSeconds={timerSeconds}
+      />
+          </div>
         </Box>
         {/* <Box> */}
         <Suspense fallback={<Loading />}>
