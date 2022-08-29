@@ -2,9 +2,10 @@
     position: absolute;
     height: 100vh;
     left: 0;
+    /* top: 0; */
     width: 100vw;
     z-index: -2;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 .frame{

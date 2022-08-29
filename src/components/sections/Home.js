@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components'
 // import TypeWriterText from '../TypeWriterText'
 import RoundTextBlack from '../../assets/Rounded-Text-White.png';
 import Loading from '../Loading';
-import Img from '../../assets/parallax-bg.gif'
+// import Img from '../../assets/parallax-bg.gif'
 import Frame from '../../assets/framegif.gif'
 import Chi from '../../assets/chi.png'
 import Civic from '../../assets/bluecar.png'
@@ -126,10 +126,13 @@ font-size:${props => props.theme.fontlg};
 const Home = () => {
   return (
     <Section id="home">
-      <img src={Img} className='bg'></img>
-      {/* <video autoPlay loop muted className='bg'>
+      {/* <img src={Img} className='bg'></img> */}
+      
+
+      <video autoPlay loop muted className='bg'>
         <source src={VID} type='video/mp4' />
-      </video> */}
+      </video>
+      
       <div className='car__container'>
       <img src={Civic} className='civic'></img>
       <img src={Wheel} className='wheel1'></img>
