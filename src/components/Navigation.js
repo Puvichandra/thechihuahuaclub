@@ -8,21 +8,35 @@ import Hand from '../assets/headfront1.png'
 
 const Section = styled.section`
 width: 100vw;
-
 // background-color: ${props => props.theme.body};
-position: absolute;
+position: fixed;
 z-index : 10;
+.active{
+  background: black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
 `
 const NavBar = styled.nav`
 display: flex;
 justify-content: space-between;
 align-items: center;
-
 width: 85%;
 height: ${props => props.theme.navHeight};
 margin: 0 auto;
 
+
+.menu__btn{
+  background: white;
+  padding: 0.5rem 1rem;
+  border: 3px solid black;
+  position: absolute;
+  left:0;
+  // border-bottom-left-radius: 2rem;
+  // border-bottom-right-radius: 2rem;
+  bottom:-2.5rem;
+  z-index:100;
+}
 .mobile{
   display: none;
 }
@@ -106,10 +120,10 @@ font-size: ${props => props.theme.fontmd};
 `
 const HamburgerMenu = styled.span`
 width:  ${props => props.click ? '2rem' : '1.5rem'};
-
+position : absolute;
 height: 2px;
 background: ${props => props.theme.body};
-
+left: 1.4rem;
 // position: absolute;
 // top: 2rem;
 // left: 50%;
@@ -186,12 +200,16 @@ const scrollTo = (id) => {
 
   return (
     
-    <Section id="navigation" className='active'>
+    <Section id="navigation">
+      <div className={nav ? 'active' : ''}>
       <NavBar>
-        <Logo />
-        <HamburgerMenu  click={click}  onClick={() => setClick(!click)}>
+        {/* <HamburgerMenu  click={click}  onClick={() => setClick(!click)}>
           &nbsp;
-        </HamburgerMenu>
+        </HamburgerMenu> */}
+        <div className='menu__btn' click={click}  onClick={() => setClick(!click)}>
+          Menu
+        </div>
+        <Logo />
         <Menu click={click}>
           <MenuItem onClick={() => scrollTo('home')}  >Home</MenuItem>
           <MenuItem onClick={() => scrollTo('about')}  >About</MenuItem>
@@ -199,19 +217,20 @@ const scrollTo = (id) => {
           <MenuItem onClick={() => scrollTo('showcase')}  >Mint</MenuItem>
           <MenuItem onClick={() => scrollTo('team')}  >Team</MenuItem>
           <MenuItem onClick={() => scrollTo('faq')}  >Faq</MenuItem>
-          <MenuItem>
+          {/* <MenuItem> */}
+          {/* </MenuItem> */}
+        </Menu>
             <div className="mobile">
             {/* <Button text="Connect Wallet" link="https://google.com" /> */}
             <Connectwallet />
             </div>
-          </MenuItem>
-        </Menu>
           <div className="desktop">
           {/* <Button text="Connect Wallet" link="https://google.com" /> */}
           <Connectwallet />
           </div>
 
       </NavBar>
+      </div>
     </Section>
   )
 }

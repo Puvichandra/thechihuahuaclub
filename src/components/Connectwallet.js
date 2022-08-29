@@ -7,7 +7,7 @@ const Connectwallet = (props) => {
   
     return (
    <button className='eightbit-btnc' >
-    Connect Wallet
+    Connect
    </button> )
 
 {/* <button  id="wallet" className={classes.connect__wallet}  onClick={props.connect}>

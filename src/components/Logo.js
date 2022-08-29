@@ -11,7 +11,7 @@ transition: all 0.2s ease;
 
 img{
   width: 5rem;
-  padding-top: 2rem;
+  padding-top: 0.8rem;
 }
 
 &:hover{
