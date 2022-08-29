@@ -6,6 +6,7 @@ import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import Hand from '../assets/headfront1.png'
 
 
 import { Pagination, Navigation, Autoplay, EffectCards } from "swiper";
@@ -54,7 +55,7 @@ width: 25vw;
     background-color: ${props => props.theme.carouselColor};
 
     border-radius: 20px;
-
+    cursor: url('${Hand}'), auto;
     display: flex;
     justify-content: center;
     align-items: center;

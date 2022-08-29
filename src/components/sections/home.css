@@ -36,7 +36,7 @@
 .wheel1{
     position: absolute;
     /* width: 3.5vw; */
-    width: 12%;
+    width: 13.5%;
     bottom: 0;
     left: 21%;
     animation: Rotate 6s linear infinite;
@@ -44,9 +44,9 @@
 .wheel2{
     position: absolute;
     /* width: 3.5vw; */
-    width: 12%;
+    width: 13.5%;
     bottom: 0;
-    left: 69%;
+    left: 71%;
     animation: Rotate 6s linear infinite;
 }
 

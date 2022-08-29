@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react'
 import { useWindowScroll } from 'react-use';
 import styled from 'styled-components'
-
+import Hand from '../assets/headfront1.png'
 
 const Up = styled.div`
 width: 3rem;
@@ -18,7 +18,7 @@ position :fixed ;
 right: 1rem;
 bottom: 1rem;
 
-cursor: pointer;
+cursor: url('${Hand}'), auto;
 
 display: none;
 justify-content: center;

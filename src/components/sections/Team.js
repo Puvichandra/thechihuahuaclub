@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import styled from 'styled-components';
-
+import Hand from '../../assets/headfront1.png'
 import img1 from '../../assets/NFT3.png';
 import img2 from '../../assets/NFT1.png';
 import img3 from '../../assets/NFT11.png';
@@ -91,7 +91,8 @@ border: 1px solid ${props => props.theme.text};
 padding: 1rem;
 
 border-radius: 20px;
-cursor: pointer;
+// cursor: pointer;
+cursor: url('${Hand}'), auto;
 
 img{
   width: 100%;
@@ -142,7 +143,7 @@ const Team = () => {
     <ConfettiComponent  /> </Suspense>
       <Title>Team</Title>
       <Container>
-        <MemberComponent img={img1}  name="Mr C" position="Web3 dev" />
+        <MemberComponent img={img1}  name="Mr C" position="Dev" />
         <MemberComponent img={img2}  name="Divine" position="NFT Artist" />
         <MemberComponent img={img3}  name="Mido" position="Web Dev" />
         {/* <MemberComponent img={img4}  name="BLACK PANTHER" position="manager" />

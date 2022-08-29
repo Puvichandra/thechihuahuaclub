@@ -9,6 +9,7 @@ import Star from '../../assets/star.png'
 import './about.css'
 
 
+
 const Carousel = lazy(() => import("../Carousel"));
 
 const Section = styled.section`

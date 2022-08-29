@@ -7,10 +7,11 @@ import Loading from '../Loading';
 import Img from '../../assets/parallax-bg.gif'
 import Frame from '../../assets/framegif.gif'
 import Chi from '../../assets/chi.png'
-import Civic from '../../assets/civic1.png'
-import Wheel from '../../assets/wheel.png'
+import Civic from '../../assets/bluecar.png'
+import Wheel from '../../assets/wheel1.png'
 import Text from '../../assets/fin.png'
 import './home.css'
+import VID from '../../assets/vid.mp4'
 
 
 const CoverVideo = lazy(() => import('../CoverVideo'));
@@ -126,6 +127,9 @@ const Home = () => {
   return (
     <Section id="home">
       <img src={Img} className='bg'></img>
+      {/* <video autoPlay loop muted className='bg'>
+        <source src={VID} type='video/mp4' />
+      </video> */}
       <div className='car__container'>
       <img src={Civic} className='civic'></img>
       <img src={Wheel} className='wheel1'></img>
