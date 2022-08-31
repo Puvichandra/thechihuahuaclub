@@ -3,10 +3,7 @@ import styled from 'styled-components'
 
 import img1 from "../../assets/NFT1.png";
 import img2 from "../../assets/NFT2.png";
-import img3 from "../../assets/Nfts/bighead-2.svg";
-import img4 from "../../assets/Nfts/bighead-3.svg";
-import img5 from "../../assets/Nfts/bighead-4.svg";
-import img6 from "../../assets/Nfts/bighead-5.svg";
+
 
 const Section = styled.section`
 width: 100vw;

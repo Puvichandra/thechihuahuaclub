@@ -1,0 +1,13 @@
+.partners{
+   
+    display: flex;
+    justify-content: center;
+    background: black;
+  
+    position: relative;
+}
+
+.partners__container{
+    
+    
+}

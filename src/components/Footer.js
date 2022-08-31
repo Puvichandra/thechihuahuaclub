@@ -6,6 +6,8 @@ import Logo from './Logo'
 import Facebook from '../Icons/Facebook'
 import Instagram from '../Icons/Instagram'
 import Twitter from '../Icons/Twitter'
+import Telegram from '../Icons/Telegram'
+import Discord from '../Icons/Discord'
 import LinkedIn from '../Icons/LinkedIn'
 import Loading from './Loading'
 
@@ -145,7 +147,7 @@ const Footer = () => {
     <Left> 
     <Logo />
     <IconList>
-      <a href="http://facebook.com" target='_blank' 
+      {/* <a href="http://facebook.com" target='_blank' 
       rel="noopener noreferrer"
       aria-label='facebook'
       >
@@ -156,19 +158,34 @@ const Footer = () => {
       aria-label='instagram'
       >
         <Instagram />
-      </a>
-      <a href="https://twitter.com/code_bucks" target='_blank' 
+      </a> */}
+
+      <a href="https://twitter.com/ChihuahuaOffl" target='_blank' 
       rel="noopener noreferrer"
       aria-label='twitter'
       >
         <Twitter />
       </a>
-      <a href="http://linkedin.com" target='_blank' 
+
+      <a href="https://t.me/TheChihuahuaClub" target='_blank' 
+      rel="noopener noreferrer"
+      aria-label='telegram'
+      >
+        <Telegram />
+      </a>
+{/* 
+      <a href="https://t.me/TheChihuahuaClub" target='_blank' 
+      rel="noopener noreferrer"
+      aria-label='telegram'
+      >
+        <Discord />
+      </a> */}
+      {/* <a href="http://linkedin.com" target='_blank' 
       rel="noopener noreferrer"
       aria-label='linkedin'
       >
         <LinkedIn />
-      </a>
+      </a> */}
     </IconList>
     </Left>
     <MenuItems>

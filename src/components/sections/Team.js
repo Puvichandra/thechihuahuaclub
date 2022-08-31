@@ -4,12 +4,6 @@ import Hand from '../../assets/headfront1.png'
 import img1 from '../../assets/NFT3.png';
 import img2 from '../../assets/NFT1.png';
 import img3 from '../../assets/NFT11.png';
-import img4 from '../../assets/Nfts/bighead-3.svg';
-import img5 from '../../assets/Nfts/bighead-4.svg';
-import img6 from '../../assets/Nfts/bighead-5.svg';
-import img7 from '../../assets/Nfts/bighead-6.svg';
-import img8 from '../../assets/Nfts/bighead-7.svg';
-import img9 from '../../assets/Nfts/bighead-8.svg';
 import Loading from '../Loading';
 // import ConfettiComponent from '../Confetti';
 

@@ -152,7 +152,7 @@ const Banner = () => {
         
         <Title>Join the  <br /> Chihuahua club  </Title>
         <BtnContainer>
-        <a href="https://www.discord.com" aria-label={"Join Now"} target="_blank" rel="noreferrer" >
+        <a href="https://t.me/TheChihuahuaClub" aria-label={"Join Now"} target="_blank" rel="noreferrer" >
         <JoiNow>
             Join Now
         </JoiNow>

@@ -1,11 +1,8 @@
 import React, { lazy, Suspense } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-// import Carousel from '../Carousel'
 import Button from '../Button'
 import {dark} from '../../styles/Themes';
 import Loading from '../Loading';
-import Frame from '../../assets/framegif.gif'
-import Star from '../../assets/star.png'
 import './about.css'
 
 
@@ -170,7 +167,7 @@ const About = () => {
         </SubTextLight>
         <ButtonContainer>
         <ThemeProvider theme={dark}>
-        <Button text="JOIN OUR DISCORD" link="https://google.com" />
+        <Button text="JOIN OUR TELEGRAM" link="https://t.me/TheChihuahuaClub" />
         </ThemeProvider>
         </ButtonContainer>
          </Box>

@@ -31,6 +31,7 @@ import Showcase from "./components/sections/Showcase";
 import Faq from "./components/sections/Faq";
 import ScrollToTop from "./components/ScrollToTop";
 import Mintingsection from "./components/Mintingsection";
+import Partners from "./components/Partners";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
         {/* <Suspense fallback={<Loading />}> */}
           <Navigation />
           <Home />
-          {/* <Slider /> */}
+          {/* <Partners /> */}
           <About />
           <Roadmap />
           <Showcase />

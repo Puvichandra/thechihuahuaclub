@@ -1,12 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import styled, { keyframes } from 'styled-components'
-// import CoverVideo from '../CoverVideo'
-// import TypeWriterText from '../TypeWriterText'
 import RoundTextBlack from '../../assets/Rounded-Text-White.png';
 import Loading from '../Loading';
-// import Img from '../../assets/parallax-bg.gif'
-import Frame from '../../assets/framegif.gif'
-import Chi from '../../assets/chi.png'
 import Civic from '../../assets/bluecar.png'
 import Wheel from '../../assets/wheel1.png'
 import Text from '../../assets/fin.png'
