@@ -36,6 +36,7 @@ import Partners from "./components/Partners";
 
 
 const TRACKING_ID = "UA-239760889-1";
+ReactGa.initialize(TRACKING_ID);
 
 useEffect (() => {
   ReactGa.pageview(window.location.pathname);
