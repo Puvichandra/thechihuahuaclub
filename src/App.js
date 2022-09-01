@@ -1,10 +1,11 @@
 
-
+import { useEffect } from "react";
 import GlobalStyles from "./styles/GlobalStyles";
 import { light } from "./styles/Themes";
 import { ThemeProvider } from "styled-components";
 import './index.css';
 import Slider from './components/Slider'
+import ReactGa from "react-ga";
 
 // import { lazy, Suspense } from "react";
 // import Loading from "./components/Loading";
@@ -32,6 +33,13 @@ import Faq from "./components/sections/Faq";
 import ScrollToTop from "./components/ScrollToTop";
 import Mintingsection from "./components/Mintingsection";
 import Partners from "./components/Partners";
+
+
+const TRACKING_ID = "UA-239760889-1";
+
+useEffect (() => {
+  ReactGa.pageview(window.location.pathname);
+},[]);
 
 function App() {
   return (
