@@ -52,14 +52,14 @@ const Box = styled.div`
 width: 60%;
 height: 100%;
 display: flex;
-padding-top: 3rem;
+padding-top: 6rem;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 gap: 0.8rem;
 
 @media (max-width: 48em) {
-  padding-top:0rem;
+  padding-top:2rem;
   gap: 0.5rem;
 }
 
@@ -139,7 +139,7 @@ const [timerDays, setTimerDays] = useState();
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("Sep 22,2022 ").getTime();
+    const countDownDate = new Date("Sep 19,2022 ").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -196,12 +196,12 @@ const [timerDays, setTimerDays] = useState();
         <Suspense fallback={<Loading />}>
           <TypeWriterText /></Suspense>
           <div className='home__timer'>
-          <Clock
+          {/* <Clock
         timerDays={timerDays}
         timerHours={timerHours}
         timerMinutes={timerMinutes}
         timerSeconds={timerSeconds}
-      />
+      /> */}
           </div>
         </Box>
         {/* <Box> */}

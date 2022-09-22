@@ -2,7 +2,7 @@
     position: absolute;
     height: 100vh;
     left: 0;
-    /* top: 0; */
+   
     bottom: 0;
     width: 100vw;
     z-index: -2;
@@ -16,25 +16,21 @@
 
 
 .car__container{
-    /* background: red; */
+
     position: absolute;
     bottom: 0;
     left: 5%;
-    /* width: 30vw; */
+
     width: 35rem;
 }
 .civic{
     width: 100%;
-    /* 
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    width: 30vw; */
+ 
 
 }
 .wheel1{
     position: absolute;
-    /* width: 3.5vw; */
+   
     width: 13.5%;
     bottom: 0;
     left: 21%;
@@ -42,7 +38,7 @@
 }
 .wheel2{
     position: absolute;
-    /* width: 3.5vw; */
+
     width: 13.5%;
     bottom: 0;
     left: 71%;

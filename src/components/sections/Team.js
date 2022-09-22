@@ -13,19 +13,19 @@ const ConfettiComponent = lazy(() => import("../Confetti"));
 const Section = styled.section`
 min-height: 80vh;
 width: 100vw;
-background-color: ${props => props.theme.body};
+background-color: ${props => props.theme.text};
 position: relative;
 overflow: hidden;
 `
 const Title = styled.h1`
   font-size: ${(props) => props.theme.fontxxl};
   text-transform: capitalize;
-  color: ${(props) => props.theme.text};
+  color: ${(props) => props.theme.body};
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  border-bottom: 2px solid ${(props) => props.theme.text};
+  border-bottom: 2px solid ${(props) => props.theme.body};
   width: fit-content;
 
   @media (max-width: 40em){
@@ -55,14 +55,14 @@ justify-content: center;
 const Item = styled.div`
 width: calc(20rem - 4vw);
 padding: 1rem 0;
-color: ${props => props.theme.body};
+color: ${props => props.theme.text};
 margin: 2rem 1rem;
 position: relative;
 z-index:5;
 
 backdrop-filter: blur(4px);
 
-border: 2px solid ${props => props.theme.text};
+border: 2px solid ${props => props.theme.body};
 border-radius: 20px;
 
 &:hover{
@@ -81,7 +81,7 @@ const ImageContainer = styled.div`
 width: 80%;
 margin: 0 auto;
 background-color:${props => props.theme.carouselColor};
-border: 1px solid ${props => props.theme.text};
+border: 1px solid ${props => props.theme.body};
 padding: 1rem;
 
 border-radius: 20px;
@@ -102,7 +102,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-transform: uppercase;
-color: ${props => props.theme.text};
+color: ${props => props.theme.body};
 margin-top: 1rem;
 `
 
@@ -112,7 +112,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-transform: capitalize;
-color: ${props => `rgba(${props.theme.textRgba},0.9)`};
+color: ${props => `rgba(${props.theme.bodyRgba},0.9)`};
 font-weight:400;
 `
 

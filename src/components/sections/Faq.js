@@ -9,9 +9,9 @@ const Section = styled.section`
 min-height: 100vh;
 height: auto;
 width: 100vw;
-background-color: ${props => props.theme.text};
+background-color: ${props => props.theme.body};
 position: relative;
-color: ${(props) => props.theme.body};
+color: ${(props) => props.theme.text};
 overflow: hidden;
 
 
@@ -23,7 +23,7 @@ flex-direction: column;
 const Title = styled.h1`
   font-size: ${(props) => props.theme.fontxxl};
   text-transform: uppercase;
-  color: ${(props) => props.theme.body};
+  color: ${(props) => props.theme.text};
   
   margin: 1rem auto;
   border-bottom: 2px solid ${(props) => props.theme.carouselColor};

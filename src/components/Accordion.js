@@ -37,7 +37,7 @@ align-items: center;
 const Reveal = styled.div`
 display: ${props => props.clicked ? 'inline-block' : 'none'};
 margin-top: 1rem;
-color: ${props => `rgba(${props.theme.bodyRgba}, 0.6)` };
+color: ${props => `rgba(${props.theme.textRgba}, 0.6)` };
 font-size: ${props => props.theme.fontmd};
 font-weight: 300;
 line-height: 1.1rem;
@@ -64,7 +64,7 @@ svg{
     width: 1rem;
     padding: 0.5rem;
     height: auto;
-    fill: ${props => props.theme.carouselColor};
+    fill: ${props => props.theme.text};
 }
 
 @media (max-width: 48em){

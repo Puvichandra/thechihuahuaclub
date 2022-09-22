@@ -31,6 +31,7 @@ import Faq from "./components/sections/Faq";
 import ScrollToTop from "./components/ScrollToTop";
 import Mintingsection from "./components/Mintingsection";
 import Partners from "./components/Partners";
+import Popup from "./components/Popup";
 
 
 
@@ -46,10 +47,11 @@ function App() {
           {/* <Partners /> */}
           <About />
           <Roadmap />
-          <Showcase />
+          {/* <Showcase /> */}
           <Team />
           <Faq />
           <Footer />
+          {/* <Popup /> */}
           {/* <ScrollToTop scrollPosition={y}/> */}
           <ScrollToTop />{" "}
         {/* </Suspense> */}

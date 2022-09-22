@@ -112,7 +112,10 @@ const TypeWriterText = () => {
     <SubTitle>Bored Of Apes? Try Something New.</SubTitle>
     <ButtonContainer>
     {/* <Button text="Explore" link="https://google.com" className='eightbit-btn eightbit-btn--reset' /> */}
+    <a href="https://mint.thechihuahuaclub.com/">
+
     <button className="mint__now eightbit-btn eightbit-btn--reset">Mint Now</button>
+    </a>
     </ButtonContainer>
     </>
   );
